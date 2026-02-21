@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Inter:wght@400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Archivo", sans-serif;
+  --color-brand-yellow: #FFD700;
+  --color-brand-black: #000000;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-black text-white font-sans antialiased;
+  }
+}
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10;
+}
+
+.yellow-glow {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.text-stroke-yellow {
+  -webkit-text-stroke: 1px #FFD700;
+  color: transparent;
+}
